@@ -7,6 +7,6 @@ function copyToClipboard(elemento) {
 }
 
 $("#copiar").click(function(){
-		copyToClipboard($(elemento));
-	}
+    copyToClipboard($(elemento));
+}
 	
