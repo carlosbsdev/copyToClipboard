@@ -1,4 +1,6 @@
 # CopyToClipboard
+![Dependencies](https://img.shields.io/badge/Dependencies-jQuery-green.svg)
+
 Pequeño script para copiar al portapapeles un texto de un elemento.
 
 # Ejemplo
