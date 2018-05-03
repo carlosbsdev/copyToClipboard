@@ -1,3 +1,6 @@
+/* 
+	With jQuery 
+*/
 function copyToClipboard(elemento) {
     var $temp = $("<input>");
     $("body").append($temp);
@@ -9,4 +12,20 @@ function copyToClipboard(elemento) {
 $("#copiar").click(function(){
     copyToClipboard($(elemento));
 }
+
 	
+		   
+/*
+	Without jQuery
+	
+<input type="text" id="link" />
+<button> copy </button>
+	
+*/
+const copyToClipboard = (input) => {
+	input.select();
+	document.execCommand('copy');
+}
+document.querySelector('button').addEventListener('click', ()=> {
+	copyToClipboard(document.querySelector('#link'))
+});
